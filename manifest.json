@@ -1,0 +1,26 @@
+{
+    "name": "Chrome Spotify Controller",
+    "description": "Chrome Extension for Spotify Player",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./Icons/obj-16x16.png",
+        "32": "./Icons/obj-32x32.png",
+        "128": "./Icons/obj-128x128.png"
+    },
+    "background": {
+        "service_worker": 
+            "./background.js"
+    },
+    "options_page": "./options.html",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "identity",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://api.spotify.com/*"
+    ]
+}

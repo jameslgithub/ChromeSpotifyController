@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 250px;
+            height: auto;
+            background-image: linear-gradient(rgb(0, 0, 0),rgb(94, 172, 139));
+        }
+        div {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 25%;
+            padding: 5px;
+            font-size: 1em;
+            background-color: rgb(0, 255, 149);
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            font-family:Arial;
+            font-weight: bold;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition-duration: 0.3s;
+
+        }
+        div:hover {
+            background-color: rgb(163, 255, 204);
+            transform: translateX(-50%) scale(1.3);
+        }
+        p {
+            color: white;
+            font-size: 1.5em;
+            font-family: cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Welcome back!</p>
+    <div id='sign-out' style="width:fit-content;">Sign Out</div>
+    <script src="./signedIn-Script.js"></script>
+    <div id='play' style="width:fit-content;" >&#9658</div>
+    <script src="./signedIn-Script.js"></script>
+    <div id='pause' style="width:fit-content;">&#9208</div>
+    <script src="./signedIn-Script.js"></script>
+
+
+</body>
+</html>
